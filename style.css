@@ -20,7 +20,7 @@ body::-webkit-scrollbar-button
 }
 
 .home {
-    background-image: url(/bg.png);
+    background-image: url(assets/bg.png);
     background-position: center center;
     background-size: min(881px, 95vw);
     width: 95vw;
@@ -340,7 +340,7 @@ body::-webkit-scrollbar-button
 
 .registerationsec
 {
-    background-image: url(/bg2.png);
+    background-image: url(assets/bg2.png);
     width: 95vw;
     margin: auto;
     margin-top: 20px;
