@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TOAD BiG - Contact Support</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f7fa;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+    }
+
+    h2 {
+      color: #0a4d29;
+      margin-bottom: 20px;
+    }
+
+    form {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 90%;
+      max-width: 500px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      margin-top: 5px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #0a4d29;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.5s;
+    }
+
+    button:hover {
+      background-color: #0c6437;
+    }
+  </style>
+</head>
+<body>
+  <h2>Contact TOAD BiG Support</h2>
+
+  <form id="contactForm"
+        action="https://docs.google.com/forms/d/e/1FAIpQLSc0jhg684nNvHoJWItd0xNM5eBi3i5kBHBYsS29q-66MZYezw/formResponse"
+        method="POST"
+        target="hidden_iframe"
+        onsubmit="return validateForm()">
+
+    <label for="name">Full Name</label>
+    <input type="text" name="entry.725676569" id="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" name="entry.431467939" id="email" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="text" name="entry.1735928334" id="phone" required>
+
+    <label for="queryType">Query Type</label>
+    <select name="entry.1734562213" id="queryType" required>
+      <option value="">Select</option>
+      <option value="Account Issue">Account Issue</option>
+      <option value="Payment Query">Payment Query</option>
+      <option value="General Help">General Help</option>
+      <option value="Feedback">Feedback</option>
+    </select>
+
+    <label for="message">Your Message</label>
+    <textarea name="entry.114606059" id="message" rows="5" required></textarea>
+
+    <button type="submit">Submit Query</button>
+  </form>
+
+  <iframe name="hidden_iframe" style="display:none;"></iframe>
+
+  <script>
+    function validateForm() {
+      const phone = document.getElementById("phone").value.trim();
+      const phoneRegex = /^[6-9]\d{9}$/;
+      if (!phoneRegex.test(phone)) {
+        alert("Please enter a valid 10-digit phone number.");
+        return false;
+      }
+      alert("Your query has been submitted successfully!\nOUR CUSTOMER SUPPORT WILL REACH YOU SOON.");
+      return true;
+    }
+  </script>
+</body>
+</html>

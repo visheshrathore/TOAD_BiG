@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TOAD BiG Registeration Form - way to get funded</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-492416397"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-492416397');
+  </script>
+
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: rgba(0, 128, 0, 0.579);
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      padding: 10px;
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .logo img {
+      max-width: 150px;
+      height: auto;
+    }
+
+    .heading {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .heading h1 {
+      color: rgb(2, 60, 4);
+      font-size: 28px;
+    }
+
+    .heading h2 {
+      margin-top: 20px;
+      font-size: 36px;
+      font-weight: 800;
+      color: rgb(2, 60, 4);
+    }
+
+    form {
+      background: white;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      font-weight: 700;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    .accountsize {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .accountsize label {
+      margin-left: 10px;
+    }
+
+    .accountsize input {
+      margin-top: 10px;
+    }
+
+    button {
+      width: 100%;
+      max-width: 300px;
+      height: 50px;
+      border-radius: 10px;
+      background-color: gold;
+      color: black;
+      font-size: larger;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 20px;
+      border: none;
+    }
+
+    @media screen and (max-width: 600px) {
+      .heading h2 {
+        font-size: 28px;
+      }
+
+      .heading h1 {
+        font-size: 20px;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="logo">
+    <img src="/toad.png" alt="TOAD Logo" />
+  </div>
+
+  <div class="heading">
+    <h1>TOAD BiG</h1>
+    <h2>Registeration FORM</h2>
+  </div>
+
+  <form id="form"
+    action="https://docs.google.com/forms/d/e/1FAIpQLSfSW9PPRmufMzsBmHoeIcMW2NFYrRr8BSYrLXzrBiJxaWRykQ/formResponse"
+    method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+
+    <label for="name">FULL NAME</label>
+    <input type="text" name="entry.259280752" placeholder="Enter your name" required />
+
+    <label for="email">EMAIL ID</label>
+    <input type="email" name="entry.15778500" placeholder="Enter your email" required />
+
+    <label for="number">PHONE NO.</label>
+    <input type="number" name="entry.1839291197" placeholder="Enter your 10-digit phone" required />
+
+    <label for="age">AGE</label>
+    <input type="number" name="entry.1645170559" placeholder="Enter your age" required />
+
+    <label style="color: blue; font-size: 18px;">ACCOUNT SIZE</label>
+    <div class="accountsize">
+      <input type="radio" name="entry.503223860" id="500" value="500" required /><label for="500">$500 (PRICE:
+        500rs)</label><br />
+      <input type="radio" name="entry.503223860" id="1k" value="1000" /><label for="1k">$1k (PRICE: 700rs)</label><br />
+      <input type="radio" name="entry.503223860" id="5k" value="5000" /><label for="5k">$5k (PRICE:
+        1500rs)</label><br />
+      <input type="radio" name="entry.503223860" id="25k" value="25000" /><label for="25k">$25k (PRICE:
+        7000rs)</label><br />
+      <input type="radio" name="entry.503223860" id="50k" value="50000" /><label for="50k">$50k (PRICE: 2100rs)</label>
+    </div>
+
+    <label style="color: blue; font-size: 18px;">PAYMENT METHOD</label>
+    <div class="accountsize">
+      <input type="radio" name="entry.1265345457" id="CRYPTO" value="crypto" required /><label
+        for="CRYPTO">CRYPTO</label><br />
+      <input type="radio" name="entry.1265345457" id="UPI" value="upi" /><label for="UPI">UPI</label>
+    </div>
+
+    <label for="details">How Did You Get to Know About TOAD BiG?</label>
+    <select name="entry.1065281562" required>
+      <option value="social_media">SOCIAL MEDIA</option>
+      <option value="friend">FRIEND</option>
+      <option value="other">OTHER</option>
+    </select>
+
+    <input type="checkbox" name="entry.1736337985" id="ageconfirmation" required />
+    <label for="ageconfirmation">I confirm that I am above 18 years old and the information provided is accurate. <a
+        target="_blank" href="/terms.html">TERMS & POLICIES</a>.</label>
+
+    <button type="submit">Complete Registration</button>
+  </form>
+
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display: none;"></iframe>
+
+
+  <script>
+    document.getElementById("form").addEventListener("submit", function (e) {
+      const phone = document.querySelector('input[name="entry.1839291197"]').value.trim();
+      const age = parseInt(document.querySelector('input[name="entry.1645170559"]').value.trim());
+
+      const phoneRegex = /^[6-9]\d{9}$/;
+
+      if (!phoneRegex.test(phone)) {
+        alert("Please enter a valid 10-digit phone number starting with 6-9.");
+        e.preventDefault(); // Stop submission on error
+        return;
+      }
+
+      if (isNaN(age) || age < 18 || age > 100) {
+        alert("Age must be a number between 18 and 100.");
+        e.preventDefault(); // Stop submission on error
+        return;
+      }
+
+      // ✅ Allow submission to Google Form
+
+      // 👇 Redirect after a short delay (form still submits in background)
+      setTimeout(() => {
+        window.location.href = "/thankyou.html";
+      }, 1000);
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #111827;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.tagline {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.content {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.content h2 {
+  color: #10b981;
+  margin-top: 30px;
+}
+
+.content p {
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1f2937;
+  color: #d1d5db;
+  margin-top: 60px;
+}
